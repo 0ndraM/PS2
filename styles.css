@@ -98,3 +98,14 @@ footer a{
   text-decoration:none;
 }
 footer a:hover{text-decoration:underline}
+
+/* QR sekce centrovaná a lehce odlišená */
+section.qr{
+  text-align:center;
+  background:var(--card);
+}
+section.qr img{
+  margin-top:.5rem;
+  border:1px solid var(--border);
+  border-radius:6px;
+}
