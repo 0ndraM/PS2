@@ -80,9 +80,9 @@
 
   /* Menší padding na menších displejích */
 @media (max-width:1000px){
-  body{font-size:2rem}
-  h2{font-size:3rem}
-  li{font-size:2rem}
+  body{font-size:1.5rem}
+  h2{font-size:2rem}
+  li{font-size:1.5rem}
   input[type="search"]{font-size:2rem}
 }
 
