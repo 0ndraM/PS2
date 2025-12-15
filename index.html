@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Test – zvýrazněné správné odpovědi">
-<meta name="author" content="Petr Šebek">
-<meta name="keywords" content="test, otázky, odpovědi, zvýrazněné, správné, HTML, CSS">
-<meta name="robots" content="index, follow">    
-<title>Test – zvýrazněné správné odpovědi</title>
-<script src="script.js" defer></script>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test – PS2</title>
+    <!-- Added CSS inline for simplicity -->
+    <style>
+        .collections .collection { display: none; }
+        .collections .collection.active { display: block; }
+    </style>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header>
-  <h1>Test – PS2</h1>
-  <input type="search" id="search" placeholder="Hledat v otázkách / odpovědích…" autocomplete="off">
-</header>
+        <h1>Test – PS2</h1>
+        <input type="search" id="search" placeholder="Hledat v otázkách / odpovědích…" autocomplete="off">
+        <button type="button" id="toggleCollection">Přepnout sbírku otázek</button>
+    </header>
 
-<!-- IPv6 -->
-<section>
+    <!-- Existing questions in collection1 -->
+    <div class="collections">
+        <div id="collection1" class="collection active">
+         <section>
   <h2>Co patří mezi charakteristiky IPv6?</h2>
   <ul>
     <li><span class="correct">bezpečnostní mechanismy přímo v IP</span></li>
@@ -240,15 +245,153 @@
     <li><span class="correct">podpora&nbsp;1310&nbsp;nm laser pro jednovidová a&nbsp;mnohavidová vlákna</span></li>
   </ul>
 </section>
-<!-- QR kód -->
-<section class="qr">
-  <h2>QR Platba</h2>
-  <img src="qr.png" alt="QR kód na projekt" width="170" height="170">
-  <p>Od doby co vynalezli peníze nemusíš děkovat</p>
+            <footer>
+                <a href="https://github.com/0ndraM">©0ndra_m_</a>
+            </footer>
+        </div>
+
+        <!-- New questions added in collection2 -->
+        <div id="collection2" class="collection">
+         <section>
+    <h2>Označte další vlastnosti RDP protokolu kromě přenosu obrazu vzdáleného počítače.</h2>
+    <ul>
+        <li><span class="correct">přenos souborů</span></li>
+        <li><span class="correct">přenos zvuků</span></li>
+        <li><span class="correct">přenos tisku</span></li>
+    </ul>
 </section>
 
-<footer>
-  <a href="https://github.com/0ndraM">©0ndra_m_ <!--2020-<?php echo date("Y"); ?>--></a>
-</footer>
+<section>
+    <h2>Označte funkce FC-1 (Fibre Channel layer 1).</h2>
+    <ul>
+        <li><span class="correct">kódování a dekódování signálu</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Označte nepravdivé výroky o SAS sběrnici.</h2>
+    <ul>
+        <li><span class="correct">SAS-3 komunikuje rychlostí 12 GB/s</span></li>
+        <li><span class="correct">SAS používá terminaci</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Označte nepravdivé výroky o SATA kabelu.</h2>
+    <ul>
+        <li><span class="correct">3 datové vodiče a 4 zemnící</span></li>
+        <li><span class="correct">maximální délka je 0,5 m</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Označte nepravdivé výroky o úplné a inkrementální záloze.</h2>
+    <ul>
+        <li><span class="correct">Pro obnovu nejsou potřeba všechny inkrementální zálohy</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Označte pravdivá tvrzení o ATA a SCSI rozhraní.</h2>
+    <ul>
+        <li><span class="correct">SCSI umožňovala připojit více zařízení než ATA ve stejné generaci</span></li>
+        <li><span class="correct">SCSI byla výkonnější než ATA ve stejné generaci</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Označte pravdivé odpovědi o Windows Deployment Services (WDS).</h2>
+    <ul>
+        <li><span class="correct">Pomocí souboru unattend.xml můžeme parametrizovat zachycený image a nastavit např. přihlašovací údaje do domény</span></li>
+        <li><span class="correct">Hybridní instalace znamená, že image obsahuje některé non-MSI aplikace, zbytek instalujeme pomocí politik</span></li>
+        <li><span class="correct">Sysprep nástroj provede zobecnění nasazovaného image</span></li>
+        <li><span class="correct">Capture image se vyrobí z boot image</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Označte pravdivé výroky o Content Management System (CMS).</h2>
+    <ul>
+        <li><span class="correct">CMS WordPress má více instalací než CMS Joomla</span></li>
+        <li><span class="correct">Současná verze CMS Drupal přímo podporuje databáze MySQL, PostgreSQL a SQLite</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Označte pravdivé výroky o iSCSI.</h2>
+    <ul>
+        <li><span class="correct">LUN poskytuje úložiště pro iSCSI</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Označte pravdivé výroky o MariaDB a MySQL.</h2>
+    <ul>
+        <li><span class="correct">Licence MySQL umožňuje jak komerční, tak i nekomerční použití</span></li>
+        <li><span class="correct">MariaDB je kompatibilní s MySQL až na úroveň názvů jednotlivých binárních souborů</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Označte pravdivé výroky o zálohování (typy).</h2>
+    <ul>
+        <li><span class="correct">On-line zálohování je přímé zálohování za chodu serveru, je rychlé</span></li>
+        <li><span class="correct">Near-line zálohování je záloha na magnetické pásky (pásková pole)</span></li>
+        <li><span class="correct">Off-site zálohování je záloha uložená mimo zálohovací místo, používaná např. při katastrofě</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Označte protokoly používané u NAS pro práci se soubory.</h2>
+    <ul>
+        <li><span class="correct">NFS</span></li>
+        <li><span class="correct">AFP</span></li>
+        <li><span class="correct">CIFS</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Označte vlastnosti SAN (Storage Area Network).</h2>
+    <ul>
+        <li><span class="correct">fyzické oddělení dat od serveru</span></li>
+        <li><span class="correct">sdílení zdrojů</span></li>
+        <li><span class="correct">redundance</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>V souvislosti se zálohováním označte pravdivé výroky (pojmy).</h2>
+    <ul>
+        <li><span class="correct">Duplikace – jedná se o zdvojení dat, např. při opakované plné záloze</span></li>
+        <li><span class="correct">Šifrování – zabezpečení záloh před únikem dat</span></li>
+        <li><span class="correct">Staging – záloha na rychlý disk a následný přesun na magnetickou pásku</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Vyjmenujte vlastnosti OS Windows, které lze nastavit pomocí Group Policy.</h2>
+    <ul>
+        <li><span class="correct">instalace software</span></li>
+        <li><span class="correct">nastavení síťových disků</span></li>
+        <li><span class="correct">nastavení jazyka systému</span></li>
+        <li><span class="correct">nastavení expirace hesla</span></li>
+        <li><span class="correct">automatické uzamknutí</span></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Vypište, do kterých sběrnic lze zapojit M.2 konektor.</h2>
+    <ul>
+        <li><span class="correct">SATA</span></li>
+        <li><span class="correct">PCIe</span></li>
+        <li><span class="correct">USB</span></li>
+    </ul>
+</section>
+
+
+        <!-- End of collection2 footer -->
+        <footer class="hidden"></footer>
+    </div>
+
 </body>
 </html>
